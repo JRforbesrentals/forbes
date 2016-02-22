@@ -1,0 +1,20 @@
+[class*="button-"]  {
+	@include border-radius(3px);
+	color:$lightest;
+	transition: background-color 0.2s ease;
+	background-color:$button;
+	text-align:center;
+	border:none;
+	&:hover {
+		background-color:darken($button,20%);
+	}	
+}
+.button-primary {
+	font-size:1.125em;
+	display:block;
+	margin:$defaultgap 0 0 0;
+	padding:$defaultgap / 2 4%;
+
+	width:100%;
+}
+

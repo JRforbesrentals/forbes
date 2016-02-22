@@ -1,0 +1,139 @@
+[class*="button-"]  {
+	@include border-radius(3px);
+	color:$lightest;
+	transition: background-color 0.2s ease;
+	background-color:$button;
+	text-align:center;
+	border:none;
+	&:hover {
+		background-color:darken($button,20%);
+	}	
+}
+.button-primary {
+	font-size:1.125em;
+	display:block;
+	margin:$defaultgap 0 0 0;
+	padding:$defaultgap / 2 4%;
+
+	width:100%;
+}
+
+.button-product {
+	font-size:1.5em;
+	margin:$defaultgap $defaultgap $defaultgap / 2 $defaultgap;
+	width:80%;
+	margin:0 $defaultgap $defaultgap $defaultgap;
+	padding:$defaultgap / 1.25 4%;	
+}
+.button-small {
+	font-size:0.750em;
+	padding:$defaultgap / 2 4%;
+}
+.button-callback {
+	font-size:1em;
+	margin: 0 auto $defaultgap / 4 auto;
+	padding:$defaultgap / 2 4%;
+	display:block;
+	width:60%;
+	text-align:center;
+	@media screen and (min-width:$bpmobilelarge) {
+	width:80%;
+	}
+	@media screen and (min-width:$bptablet) {
+	width:60%;
+	}
+}
+.button-edit {
+	position:absolute;
+	right:0.4em;
+	top:0.36em;
+	font-size: 0.750em;
+  	padding: $defaultgap / 2 1%;
+}
+.button-next {
+  position:absolute;
+  right:3.5%;
+  top:$defaultgap;
+  padding:$defaultgap / 2 4%;
+  display:block;
+  font-size:1em;
+  @media screen and (min-width:$bptablet) {
+	right:2.5%;  
+  }
+}
+
+.button-callback {
+  float:left;
+  padding:$defaultgap / 2 4%;
+  display:block;
+  font-size:1em;
+  @media screen and (min-width:$bptablet) {
+	right:2.5%;  
+  }
+}
+
+
+
+.button-rentproduct {
+	font-size:1;
+	padding:$defaultgap / 2 4%;
+	display:block;
+	margin:$defaultgap / 2 auto;
+	text-align:center;
+}
+.button-back {
+  color:$button;
+  background:none;
+  position:absolute;
+  font-size:1em;
+  left:1%;
+  top:1em;
+  padding:0.5em 4%;
+  	&:hover {
+		background-color:lighten($button,80%);
+		color:darken($button,15%);
+	}
+}
+.button-secondary {
+ 	color:$button;
+ 	margin-left:$defaultgap;
+
+}
+.button-subscribe {
+	float:left;
+	padding:0.8em 4%;
+	font-size:1em;
+	margin-bottom:$defaultgap / 4;
+	@media screen and (min-width:$bptablet) {
+	margin:0.6em 0 0 $defaultgap / 1.5;
+}
+}
+.button-short {
+	max-width:50%;
+}
+.button-carousel {
+	font-size:1em;
+	display:block;
+	margin:$defaultgap / 2 auto 0 auto;
+	padding:$defaultgap / 2.5 4%;
+	width:43%;
+	text-align:center !important;
+	@media screen and (min-width:$bpmobilelarge) {
+		font-size:1.25em;
+	}
+		@media screen and (min-width:$bptablet) {
+	//	margin-top:-$defaultgap * 3;
+	}
+	@media screen and (min-width:$bpdesktop) {
+		margin-top:$defaultgap / 2;
+	}
+}
+input[type="submit"] {
+	-webkit-appearance: none;
+}
+.button-cookie {
+	width:4em;
+	margin:$defaultgap / 3 1em 0 1em;
+	font-size:0.75em;
+	text-align:center;
+}

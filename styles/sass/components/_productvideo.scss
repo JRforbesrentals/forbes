@@ -1,0 +1,340 @@
+.module-product-video {
+  	border-top:1px solid $border;
+    border-right:1px solid $border;
+    border-left:1px solid $border;
+	@include border-radius(5px 5px 0 0);
+    margin-bottom:0;
+}
+.module-video-cta {
+    
+}
+.product-main p {
+    font-size:1em;
+    @media screen and (min-width:$bptablet) {
+    font-size:1.25em;
+    }
+}
+p.product-intro {
+    font-size:1em;
+    font-weight:bold;
+    @media screen and (min-width:$bptablet) {
+    font-weight:normal;
+    font-size:1.5em;
+    }
+    @media screen and (min-width:$bpdesktop) {
+    font-size:1.75em;
+    }
+}
+hgroup h1 {
+    margin-bottom:0;
+}
+hgroup h2 {
+    font-size:1.25em;
+}
+p.pull-quote {
+    border-top:10px solid lighten($midgrey,30%);
+    margin:$defaultgap * 1.5 0 0 0;
+    padding:$defaultgap / 2 0 0 0;
+    font-size:1.25em;
+    font-weight:bold;
+    text-align:center;
+    @media screen and (min-width:$bptablet) {
+     margin:$defaultgap * 2 0 0 0;
+     padding:$defaultgap 0 0 0;
+     text-align:left;   
+    }
+}
+a.transcript {
+    display:block;
+     margin:$defaultgap / 2 0 $defaultgap 0;   
+    @media screen and (min-width:$bptablet) {
+    margin:0 0 $defaultgap 0 0;     
+    }
+}
+a[href^=tel] {
+    color:lighten($fontdefault,15%);
+    &:hover {
+        text-decoration:none;
+    }
+}
+div.product-features {
+   background:$forbes;
+   color:$lightest;
+   @include border-radius(0 0 5px 5px);
+   padding:$defaultgap * 2 $defaultgap;
+   margin-bottom:$defaultgap;
+   @media screen and (min-width:$bptablet) {
+   padding:$defaultgap * 3.5 $defaultgap * 3;     
+   }
+}
+div.product-features h3 {
+    font-size:1.25em;
+    font-weight:bold;
+    color:lighten($forbes,40%);   
+}
+[class*='product-features'] li {
+    margin-bottom:$defaultgap;
+    padding:0 0 2px $defaultgap * 2;
+    background:url('../images/bullet-features.png') no-repeat 0 0;
+}
+div.video-wrapper {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:25px;
+    height:0;
+    border:1px solid $border;
+}
+div.video-wrapper > video, .main-image {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.module-product-video-cta {
+    background:$productcta;
+    @include border-radius(5px 5px 5px 5px);
+    padding:$defaultgap $defaultgap * 1.5;
+    font-weight:bold;
+}
+.module-product-video-cta p {
+     margin-bottom:0;
+}
+[class*="module-price-type"] {
+    border:2px solid $border;
+    @include border-radius(5px 5px 5px 5px); 
+}
+[class*="rental-type"] {
+    font-size:1em;
+    padding:$defaultgap / 4 $defaultgap;
+    color:$midgrey;
+}
+[class*="price-point"] {
+    background:$pricepoint;
+    color:$lightest;
+    padding:$defaultgap / 4 $defaultgap;
+    @include border-radius(0px 0px 4px 4px);
+    font-size:1.25em;
+}
+.module-price-type-related {
+    margin-top:$defaultgap / 2;
+    margin-bottom:0;
+}
+.product-desc-video {
+      margin:$defaultgap 0;  
+}
+.product-desc-video p {
+    font-size:1em;
+    margin-bottom:$defaultgap;
+}
+.product-desc-video p:last-child {
+    margin-bottom:0;   
+}
+p.call {
+    font-size:0.9em;
+    position:relative;
+}
+p.tel {
+    font-size:1.5em;
+    @media screen and (min-width:$bpmobilelarge) {
+    font-size:1.75em;
+    }    
+     @media screen and (min-width:$bpdesktop) {
+       font-size:2.25em;  
+     }
+}
+p.call:before, p.call:after {
+    position:absolute;
+    content:"";
+    width:90px;
+    height:2px;
+    top:$defaultgap / 2;
+    background:lighten($midgrey,25%);
+    border-top:1px solid $lightest;   
+     @media screen and (min-width:$bptablet) {
+         width:65px;    
+     }
+     @media screen and (min-width:$bpdesktop) {
+         width:100px;    
+     }
+}
+p.call:after {
+     left:0;   
+}
+p.call:before {
+   right:0; 
+}
+    @media screen and (min-width:$bptablet) {
+    font-size:1.25em;
+    }
+.button-product-video {
+    display:block;
+    width:100%;
+    margin:$defaultgap 0 $defaultgap / 2 0;
+    padding:$defaultgap / 2 $defaultgap;
+    font-size:1.5em;
+    text-shadow: 2px 2px darken($forbes,15%);
+    @include border-radius(0.5em);
+    color:$lightest;
+    background:$forbes;
+    text-align:center;
+    border:none;
+    border:1px solid darken($forbes,10%);
+    box-shadow:1px 1px 0 lighten($forbes,20%) inset;
+    background: -webkit-gradient(linear, left top, left bottom, from($forbes), to(darken($forbes,10%)));
+    background: -webkit-linear-gradient(top, $forbes, darken($forbes,10%));
+    background: -moz-linear-gradient(top, $forbes, darken($forbes,10%));
+    background:-ms-linear-gradient(top, $forbes, darken($forbes,10%));
+    background: -o-linear-gradient(top, $forbes, darken($forbes,10%));
+    background: linear-gradient(top, $forbes, darken($forbes,10%));
+    &:hover {
+    background:darken($forbes,14%);
+    background:darken($forbes,14%);
+    background: -webkit-gradient(linear, left top, left bottom, from($forbes), to(darken($forbes,14%)));
+    background: -webkit-linear-gradient(top, $forbes, darken($forbes,14%));
+    background: -moz-linear-gradient(top, $forbes, darken($forbes,14%));
+    background:-ms-linear-gradient(top, $forbes, darken($forbes,14%));
+    background: -o-linear-gradient(top, $forbes, darken($forbes,14%));
+    background: linear-gradient(top, $forbes, darken($forbes,14%));
+    cursor:pointer;
+    text-decoration:none; 
+    }
+}
+/*
+ul.thumbs {
+    width:100%;
+    margin:auto;
+    text-align:center;
+    @media screen and (min-width:$bptablet) {
+    } 
+}
+ul.thumbs li {
+     display:inline-block;
+     margin:auto;
+     text-align:center;
+     @media screen and (min-width:$bpdesktop) {
+     float:none;    
+     }  
+}
+*/
+[class*="thumb-"] {
+    max-width:43px;
+    border:1px solid $midgrey;
+    @media screen and (min-width:$bpmobilelarge) {
+     max-width:70px;   
+    }
+    @media screen and (min-width:$bptablet) {
+    max-width:43px;
+    margin-bottom:3px;
+    }
+    @media screen and (min-width:$bpdesktop) {
+      max-width:50px;    
+    }
+    &:hover {
+        cursor:pointer;
+    }
+}
+[class*="controls-"] {
+    position:absolute;
+    width:1em;
+    height:1em;
+    background:$forbes;
+    @media screen and (min-width:$bptablet) {
+     display:none;   
+    }
+}
+.controls-left {
+    left:$defaultgap;
+}
+.controls-right {
+    right:$defaultgap;
+}
+.col-product-thumbnails {
+    padding:0;
+    @media screen and (max-width:$bptablet) {
+    display:block;
+    width:100%;
+    }
+    @media screen and (min-width:$bptablet) {
+       padding-top:10px !important;
+    }
+}
+.col-video {
+   @media screen and (max-width:$bptablet) {
+    width:100%;
+   }
+}
+    .boxwrap {
+        overflow:hidden;
+        position:relative;
+    }
+a.selected {
+    color:$midgrey;
+}
+
+.module-liked {
+   
+}
+.module-viewed {
+    
+}
+a.show-list {
+    color:lighten($forbes,40%);
+    display:block;
+    top:$defaultgap;
+}
+.product-features-list-full {
+    display:none;
+}
+.product-features a {
+    color:lighten($forbes,40%);
+    &:hover {
+        cursor:pointer;
+    }
+}
+.related-product {
+    background:$productcta;
+    @include border-radius(5px 5px 5px 5px);
+    padding:$defaultgap;
+  /*  font-size:2em; */
+    margin-bottom:$defaultgap;
+}
+.related-product:last-child {
+    margin-bottom:0;   
+}
+.related-product p {
+    margin-bottom:0;   
+}
+.related-product:last-child {
+    margin-bottom:0;   
+}
+.related-product p {
+    margin-bottom:0;   
+}
+.related-product a {
+    font-size:1.25em;
+       @media screen and (min-width:$bptablet) {
+       font-size:1em;    
+       }
+}
+.rental-type-related {
+
+    font-size:1em;
+ /*   padding:0;
+ */
+}
+.price-point-related {
+    font-size:1em;
+ /*
+    font-size:0.8em;
+    padding:0;
+ */
+}
+
+
+
+
+/*
+.price-point-related 
+.module-price-type
+*/

@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* colours */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  font-size: 1em;
+  line-height: 1.2;
+  background: #efefef; }
+
+a {
+  text-decoration: none;
+  color: #61a0d1; }
+  a:hover {
+    text-decoration: underline; }
+
+strong {
+  font-weight: bold; }
+
+h1, h2 {
+  color: #3a88c6; }
+
+footer h1 {
+  color: #666666; }
+
+.main {
+  background: #61a0d1;
+  text-shadow: 0 2px 3px #4a4a4a;
+  font-size: 1.3em;
+  padding: 0.1em 0;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+  margin: 0; }
+
+.terms h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-decoration: none;
+  display: block;
+  color: #5f5f5f; }
+
+.rentaltype {
+  border-top: 1px solid #999999;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  padding: 0.3em 5%;
+  background: #cccccc;
+  text-align: center; }
+
+.rentalprice {
+  color: white;
+  background: #189200;
+  border: 1px solid #147900;
+  padding: 0.3em 5%;
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin: 0; }
+
+[class*="col-"] {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  text-align: left; }
+
+div.row {
+  display: block;
+  position: relative;
+  margin: 0 -10px;
+  margin-bottom: 0; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media screen and (min-width: 480px) {
+  .col-1 {
+    float: left;
+    width: 8.33%; }
+
+  .col-2 {
+    float: left;
+    width: 16.66%; }
+
+  .col-3 {
+    float: left;
+    width: 25%; }
+
+  .col-4 {
+    float: left;
+    width: 33.33%; }
+
+  .col-5 {
+    float: left;
+    width: 41.66%; }
+
+  .col-6 {
+    float: left;
+    width: 50%; }
+
+  .col-7 {
+    width: 58.33%; }
+
+  .col-8 {
+    float: left;
+    width: 66.66%; }
+
+  .col-9 {
+    float: left;
+    width: 75%; }
+
+  .col-10 {
+    float: left;
+    width: 83.33%; }
+
+  .col-11 {
+    float: left;
+    width: 91.66%; }
+
+  .col-12 {
+    float: left;
+    width: 100%; } }
+.columns {
+  float: left;
+  width: 50%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+div.head {
+  margin: 0 auto 2em auto;
+  position: relative;
+  background: white;
+  border-bottom: 2px solid #61a0d1;
+  box-shadow: 0 10px 6px -6px #d6d6d6;
+  height: 60px;
+  /*	min-height:4em; */
+  text-align: left;
+  min-width: 320px;
+  /*	line-height:65px; */
+  padding: 1em 0; }
+
+div.head img {
+  width: 240px;
+  /*	width:76%; */
+  margin: 0 0 0 10px;
+  /*	position:abosolute; */
+  vertical-align: middle; }
+
+div.head p {
+  float: right;
+  display: none; }
+
+div.wrapper {
+  /* width:98%; */
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  /*	min-width:290px; */
+  position: relative;
+  z-index: 1000;
+  background: #efefef; }
+
+div.contentwrapper {
+  padding: 0 20px;
+  max-width: 320px; }
+
+.module {
+  border: 1px solid #cccccc;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+  margin-bottom: 1em;
+  display: block;
+  width: 100%;
+  position: relative;
+  background: white; }
+
+.divider {
+  border-right: 1px dotted #cccccc; }
+
+.centered {
+  text-align: center; }
+
+hgroup {
+  text-align: center; }
+
+nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  min-height: 100%;
+  vh: 10000em;
+  padding: 75px 25px 15px 25px;
+  margin: 0;
+  list-style: none;
+  background: #22558a;
+  background-image: url(../images/forbes-logo-blue.png);
+  background-repeat: no-repeat;
+  background-size: 180px 20px;
+  background-position: 40px 20px;
+  z-index: 1000; }
+
+a#togglemenu {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 6em;
+  background: #61a0d1;
+  color: white;
+  z-index: 300; }
+
+.wrapper, nav {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000; }
+
+.animating nav, .menu-visible nav {
+  display: block; }
+
+.animating .wrapper {
+  transition: transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform .25s ease-in-out; }
+
+.animating.left .wrapper {
+  transform: translate3d(-250px, 0, 0);
+  -webkit-transform: translate3d(-240px, 0, 0); }
+
+.animating.right .wrapper {
+  transform: translate3d(250px, 0, 0);
+  -webkit-transform: translate3d(240px, 0, 0); }
+
+.menu-visible .wrapper {
+  right: 250px; }
+
+footer {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  display: block;
+  clear: both;
+  background: white; }
+
+/*# sourceMappingURL=main.css.map */

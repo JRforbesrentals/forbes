@@ -1,0 +1,16 @@
+html, body {
+	background:#efefef;
+}
+.iemenu {
+	position:absolute;
+	display:block;
+	width:100%;
+	padding:20em 10em;
+	z-index:10;	
+}
+.icon-arrow-left, .icon-arrow-right {
+	display:none;
+}
+.wrapperright {
+	right:560px;
+}

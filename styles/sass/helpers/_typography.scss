@@ -1,0 +1,63 @@
+body {
+	font-family:$fontstack;
+	color:$fontdefault;
+	font-size:1em;
+	line-height:1.2;
+	background:lighten($midgrey,35%);
+}
+ a {
+ 	text-decoration:none;
+ 	color:$forbes;
+ 	&:hover {
+ 		text-decoration:underline;
+ 	}
+ }
+ strong {
+  font-weight:bold;
+}
+ h1, h2 {
+	color:darken($forbes,10%);
+}
+footer h1 {
+	color:$fontdefault;
+}
+ .main {
+  background:$forbes;
+  text-shadow: 0 2px 3px darken($midgrey,30%);
+  font-size:1.3em;
+  padding:0.1em 0;
+  text-align:center;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  color:$lightest;
+  margin:0;
+}
+.terms h4 {
+  font-size:1.2em;
+  font-weight:bold;
+  font-variant:small-caps;
+  text-decoration:none;
+  display:block;
+  color:rgba(95,95,95,1);
+}
+.rentaltype {
+  border-top:1px solid darken($border,20%);
+  border-left:1px solid darken($border,20%);
+  border-right:1px solid darken($border,20%);
+
+   @include border-radius(5px 5px 0 0);
+  padding:0.3em 5%;
+  background:$border;
+  text-align: center;
+}
+.rentalprice {
+    color:$lightest;
+    background:$pricepoint;
+    border:1px solid darken($pricepoint,5%);
+    padding:0.3em 5%;
+     @include border-radius(0 0 5px 5px);
+    text-align:center;
+    width:100%;
+    display:inline-block;
+    margin:0;
+  }

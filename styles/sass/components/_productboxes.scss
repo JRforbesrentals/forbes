@@ -1,0 +1,73 @@
+.product {
+	margin-bottom:$defaultgap;
+	border:1px solid $border;
+	@include border-radius(5px 5px 5px 5px);
+	padding:0 0 0 0;
+	text-align:center;
+	min-height: 325px;
+	position:relative;
+	font-size:1.25em;
+	padding:$defaultgap 0 0 0;
+	@media screen and (min-width:479px)  {
+		float:left;
+		width:47.55%;
+		margin:0 $defaultgap $defaultgap 0;
+		padding:$defaultgap 0 0 0;
+	}
+	@media screen and (min-width:$bptablet) {
+		float:left;
+		width:31.3%;
+		font-size:1em;
+		padding:$defaultgap / 2 0 0 0;
+		}
+	 @media screen and (min-width:$bpdesktop) {
+	 	padding:$defaultgap 0 0 0;
+
+	}
+}
+article.product:nth-child(even) {	
+	@media screen and (min-width:479px) and (max-width:$bptablet) {
+	margin-right:0;
+	}
+}
+article.product:nth-child(3n+5) {
+	@media screen and (min-width:$bptablet) {
+		margin-right:0;
+  }
+}
+.product img {
+/*	max-width:50%; */
+/*	max-width:100%; */
+	  margin:0 0 $defaultgap 0;
+	  max-width:95%;
+	@media screen and (min-width:$bptablet) {
+	  max-width:75%;
+	}
+	@media screen and (min-width:$bpdesktop) {
+	  max-width:85%;
+	}
+}
+.product a {
+	font-weight:bold;
+}
+.spec {
+ background:lighten($midgrey,30%);
+ padding:$defaultgap / 2 0;
+ position:absolute;
+ bottom:0;
+ left:0;
+ min-height:135px;
+ width:100%;
+ @media screen and (min-width:479px) and (min-width:$bptablet) {
+	min-height:160px;
+ 	}
+}
+.divider {
+	border-right:1px dotted $border;
+}
+.product p {
+	margin-bottom:0;
+}
+.spec > h3 {
+	font-size:1.25em;
+}

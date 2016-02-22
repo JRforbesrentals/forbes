@@ -1,0 +1,153 @@
+ *,
+ *:before,
+ *:after 
+ {
+  box-sizing:border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background:$darkblue;
+}
+img {
+	max-width:100%;
+}
+div.headermobile {
+	margin:0 auto 2em auto;
+	position:relative;
+	background:$lightest url(../images/forbes-rentals-logo.png) no-repeat 5% 50%;
+	background-size:65%;
+	border-bottom:2px solid $forbes;
+ 	box-shadow: 0 10px 6px -6px lighten($midgrey,25%);
+ 	height:60px;
+ 	text-align:left;
+	padding:1em 0;
+}
+div.headermobile img {
+	width:240px;
+	margin:0 0 0 10px;
+	vertical-align:middle;
+}
+div.headermobile p {
+	float:right;
+	display:none;
+}
+div.wrapper {
+	@include center();
+	width:100%;
+	min-width:290px;
+	position:relative;
+	padding:0;
+	z-index:1002;
+	background:lighten($midgrey,35%);
+}
+.contentwrapper {
+	margin:0;
+	padding:0 20px;
+//	background:lighten($midgrey,35%);
+//background:yellow;
+//height:100%;
+}
+.module {
+	border:1px solid $border;
+	@include border-radius(5px 5px 5px 5px);
+	margin-bottom:$defaultgap;
+	display:block;
+	width:100%;
+	position:relative;
+	background:$lightest;
+}
+.divider {
+	border-right:1px dotted $border;
+}
+.centered {
+  text-align: center;
+
+}
+hgroup {
+	text-align:center;
+}
+
+@media screen and (min-width:$bptablet) {
+
+div.headermobile {
+	display:none;
+}
+
+
+
+
+
+
+/*
+
+div.wrapper {
+	width:98%;
+	max-width:980px;
+	margin:0 auto;
+	padding:10px 20px;
+	text-align:center;
+	background:$colour-lightest;
+	border-left:1px solid lighten($colour-grey,20%);
+	border-right:1px solid lighten($colour-grey,20%);
+	border-bottom:1px solid lighten($colour-grey,20%);
+}
+div.wrapper:after {
+	content:"";
+	display:block;
+	clear:both;
+
+}
+img {
+
+	max-width:100%;
+
+}
+
+*/
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:$bptablet) {
+
+
+
+a#togglemenu {
+	display:none;
+}
+
+div.header img {
+	max-width:50%;
+	float:left;
+	margin:1em 0;
+}
+div.header .contentwrapper {
+	border-left:1px solid $border;
+	border-right:1px solid $border;
+
+}
+}
+
+
+
+
+
+@media screen and (min-width:$bpdesktop) {
+
+
+
+
+
+
+
+
+
+	}

@@ -1,0 +1,11 @@
+@-webkit-keyframes fadeIn {
+	0% {background-color:#fff;}
+	50% {background-color:#ad301b;}
+	100% {background-color:#fff;}
+}
+.backgroundAnimated {
+	background-image:none !important;
+	-webkit-animation:fadeIn 5s ease-in-out;
+	-moz-animation:fadeIn 5s ease-in-out;
+	animation:fadeIn 5s ease-in-out;	
+}

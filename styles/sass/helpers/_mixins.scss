@@ -1,0 +1,63 @@
+@mixin clearfloat() {
+	content:"";
+	display:table;
+	clear:both;
+}
+@mixin border-radius($radius) {
+	border-radius:$radius;
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	-o-border-radius:$radius;
+}
+@mixin center() {
+	/* width:98%; */
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+}  
+@mixin centre-module() {
+	width:98%;
+	max-width:980px;
+	margin:0 auto;
+	padding:10px 20px;
+	text-align:center;
+	background:$lightest;
+	border-left:1px solid $border;
+	border-right:1px solid $border;	
+}
+@mixin linear-gradientold($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+@mixin transition($args) {
+	-webkit-transition:$args;
+	-moz-transition:$args;
+	-ms-transition:$args;
+	-o-transition:$args;
+	transition:$args;
+}
+
+@mixin linear-gradient($top,$bottom) {
+  background: $top; /* Old browsers */
+  background: -webkit-linear-gradient($top, $bottom); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($top, $bottom); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($top, $bottom); /* Standard syntax */
+ }
+ @mixin floated-col($width) {
+ 	float:left;
+ 	width:$width;
+ }
+ @mixin border-all($thickness, $type, $colour) {
+ 	border-top:$thickness $type $colour;
+ 	border-right:$thickness $type $colour;
+ 	border-bottom:$thickness $type $colour;
+ 	border-left:$thickness $type $colour;
+ }
+ // @mixin border-sides($top,$right,$bottom,$left);

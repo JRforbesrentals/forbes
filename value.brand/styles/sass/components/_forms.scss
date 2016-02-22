@@ -1,0 +1,34 @@
+.ui-autocomplete {
+	z-index:10000000;
+	background:lighten($midgrey,20%);
+	width:10em;
+	color:darken($midgrey,30%);
+	padding:$defaultgap;
+	@include border-radius(0.5em);
+	font-size:0.9em;
+	font-weight:bold;
+	border:3px solid $border;
+}
+.ui-autocomplete li {
+	display:block;
+	border-bottom:1px solid $border;
+	padding:$defaultgap / 2 0;
+}
+.ui-autocomplete li:last-child {
+	border-bottom:0;
+} 
+.ui-autocomplete a {
+	&:hover {
+		cursor:pointer;
+	}
+}
+.product-search {
+	position:relative;
+}
+.product-search label {
+	font-size:20em;
+	color:goldenrod;
+	border:2px solid solid red;
+	z-index:10000001;
+	position:absolute;
+}
